@@ -22,7 +22,6 @@ class MainViewModel @Inject constructor(
             try {
                 _infoListRick.value = Resource.Loading
                 val data = getApiInfoUseCase.invoke()
-                Log.d("GetInfoRick", "ViewModel: ${data}")
                 _infoListRick.value = Resource.Success(data)
             } catch (e: Exception) {
                 _infoListRick.value = Resource.Error(e.message ?: "Unknown error")

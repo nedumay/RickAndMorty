@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun listInfoObserver(){
         viewModel.infoListRick.onEach { result ->
-            Log.d("GetInfoRick", " on Each ${result}")
             when (result) {
                 is Resource.Error -> {
                     Log.d("GetInfoRick", "Error")
@@ -84,7 +83,6 @@ class MainActivity : AppCompatActivity() {
         it: Resource.Success<List<InfoRick>>
     ) {
         binding.recyclerView.adapter = adapter
-        Log.d("GetInfoRick", "adapter: ${it.data}")
         adapter.submitList(it.data)
     }
 }
