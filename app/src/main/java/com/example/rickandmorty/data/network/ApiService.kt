@@ -6,5 +6,5 @@ import retrofit2.http.GET
 interface ApiService {
 
     @GET("character")
-    suspend fun getInfoRick(): ApiResponse
+    suspend fun getApiInfo(): ApiResponse
 }

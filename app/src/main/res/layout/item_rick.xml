@@ -8,7 +8,8 @@
     android:paddingStart="24dp"
     android:paddingEnd="24dp"
     android:paddingTop="16dp"
-    android:paddingBottom="16dp">
+    android:paddingBottom="16dp"
+    android:elevation="8dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewImage"
@@ -120,11 +121,12 @@
         tools:ignore="MissingConstraints">
 
         <LinearLayout
+            android:id="@+id/linearLayoutWatchLive"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:orientation="horizontal">
 
             <TextView
