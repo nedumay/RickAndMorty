@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF6B00</color>
+    <color name="orangeLight">#FAC7A3</color>
+    <color name="gray">#525252</color>
+    
+    <color name="backgroundAlive">#C7FFB9</color>
+    <color name="backgroundDead">#FFE8E0</color>
+    <color name="backgroundUnknown">#EEEEEE</color>
+
+    <color name="textAlive">#319F16</color>
+    <color name="textDead">#E93800</color>
+    <color name="textUnknown">#A0A0A0</color>
+
+
+
 </resources>
