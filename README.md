@@ -4,4 +4,4 @@
 
 Сделано по принципу чистой архитектуры.
 
-Apk: https://disk.yandex.ru/d/f69bQzfyQ0Ahcg
+Apk: https://disk.yandex.ru/d/-Tpw26Y-6DumlQ
