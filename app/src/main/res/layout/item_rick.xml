@@ -16,6 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="40dp"
+        android:elevation="16dp"
         tools:ignore="MissingConstraints">
         <ImageView
             android:id="@+id/imageView"
@@ -25,13 +26,13 @@
 
     <TextView
         android:id="@+id/textViewName"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:fontFamily="sans-serif-medium"
+        android:breakStrategy="balanced"
         android:text="Rick Sanchez"
-        android:textColor="@color/black"
-        android:textSize="21sp"
+        style="@style/TextStyleTitleItem"
+        app:layout_constraintEnd_toStartOf="@+id/cardWatchLive"
         app:layout_constraintStart_toEndOf="@+id/cardViewImage"
         app:layout_constraintTop_toTopOf="@+id/cardViewImage"
         tools:ignore="MissingConstraints" />
@@ -41,11 +42,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="4dp"
         android:text="Human, male"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        android:layout_marginTop="8dp"
+        style="@style/TextStyle"
         app:layout_constraintStart_toEndOf="@+id/cardViewImage"
         app:layout_constraintTop_toBottomOf="@+id/textViewName"
         tools:ignore="MissingConstraints" />
@@ -55,7 +55,8 @@
         android:layout_width="148dp"
         android:layout_height="35dp"
         app:cardCornerRadius="17dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
+        android:elevation="8dp"
         app:cardBackgroundColor="@color/orangeLight"
         app:layout_constraintStart_toStartOf="@+id/textViewGenderAndSpecies"
         app:layout_constraintTop_toBottomOf="@+id/textViewGenderAndSpecies"
@@ -77,11 +78,10 @@
                 android:id="@+id/textViewWatchEpisodes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
                 android:layout_marginStart="8dp"
                 android:text="Watch episodes"
                 android:textColor="@color/orange"
-                android:textSize="14sp"
+                style="@style/TextStyle"
                 />
 
         </LinearLayout>
@@ -102,10 +102,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:fontFamily="sans-serif-medium"
         android:text="Earth (C-500A)"
         android:textColor="@color/gray"
-        android:textSize="14sp"
+        style="@style/TextStyle"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewLocation"
         app:layout_constraintStart_toEndOf="@+id/imageViewLocation"
         app:layout_constraintTop_toTopOf="@+id/imageViewLocation"
@@ -116,6 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         app:cardCornerRadius="17dp"
+        android:elevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textViewName"
         tools:ignore="MissingConstraints">
